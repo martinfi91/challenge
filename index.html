@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <main class="encriptacion">
+        <section class="logo">
+            <img src="/imagenes/Logo.png" alt="Logo alura">
+        </section>
+
+        <section class="seccion-inicial">
+            <div class="texto-a-encriptar">
+                <textarea class="textarea-usuario" id="textarea-usuario" placeholder="Ingrese el texto aqui" rows="10"
+                    cols=""></textarea>
+            </div>
+            <div class="acciones-usuario">
+                
+                    <div class="sugerencia">
+                        <img src="/imagenes/Group.png" alt="exclamacion" class="exclamation">
+                        <p class="sugerencia-usuario">Solo letras minúsculas y sin acentos.</p>
+                    </div>                   
+                <div class="botones">
+                    <button class="btn-encriptar" onclick="encriptar()">Encriptar</button>
+                    <button class="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+        <section class="seccion-resultado">
+            <img src="/imagenes/Muñeco.png" alt="muñeco-analizando" class="muñeco" id="muneco">
+            
+            <div class="no-text" id="no-text">
+                <div class="alertas-resultado" id="alertas-resultado">
+                    <p class="alerta">Ningún mensaje fue encontrado</p>
+                    <p class="indicacion">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </div>
+            
+            <div class="area-texto-encriptado" id="area-texto-encriptado" style="display: none;">
+                <p class="texto-encriptado" id="texto-encriptado"></p>
+            </div>
+                    
+            <div class="copiar" id="copiar" style="display: none;">
+                <button class="btn-copiar" onclick="botonCopiar()">Copiar</button>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <p>Made by: Martin Figueroa  </p>
+    </footer>
+    <script src="/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,247 @@
+:root {
+    --color-fondo: #E8E8E8;
+    --color-secundario: #ffffff;
+    --color-fuentes: #0A3871;
+    --color-boton2: #D8DFE8;
+}
+
+
+body {
+    background-color: var(--color-fondo);
+}
+
+
+
+main {
+    display: flex;
+    padding: 2.77% 2.77% 2.77% 2.77%;
+}
+
+footer {
+    text-align: center;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    padding: 1/2 rem;
+    font-size: 100%;
+    font-family: sans-serif;
+    word-break: break-all;
+}
+
+.logo {
+    padding-right: 5.88%
+}
+
+.seccion-inicial {
+    display: flex;
+    flex-direction: column;
+    min-width: 50%;
+    padding-top: 10%;
+    padding-right: 5.88%;
+    justify-content: space-between;
+}
+
+.textarea-usuario {
+    border: none;
+    outline: none;
+    color: var(--color-fuentes);
+    background: none;
+    resize: none;
+    width: 100%;
+    font-size: 2rem;
+    font-family: sans-serif;
+    text-transform: lowercase;
+    padding-left: 1%;
+}
+
+.textarea-usuario::placeholder {
+    color: var(--color-fuentes);
+    font-size: 2rem;
+    font-family: sans-serif;
+}
+
+.acciones-usuario {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 13.2%;
+}
+
+
+.sugerencia {
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    word-break: break-all;
+    font-size: 0.75rem;
+    gap: 0.5rem;
+}
+
+.exclamation {
+    width: 1rem;
+    height: 1rem;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    word-break: break-all;
+}
+
+.btn-encriptar {
+    border: none;
+    background-color: var(--color-fuentes);
+    color: var(--color-secundario);
+    border-radius: 24px;
+    padding: 1.5rem;
+    width: 48%;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.btn-desencriptar {
+    border: var(--color-fuentes) solid 2px;
+    background-color: var(--color-boton2);
+    border-radius: 24px;
+    padding: 1.5rem;
+    width: 48%;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+
+.btn-encriptar,
+.btn-desencriptar,
+.btn-copiar:hover {
+    cursor: pointer;
+}
+
+.seccion-resultado{
+    background-color: var(--color-secundario);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 2rem;
+    min-width: 30%;
+    align-items: center;
+}
+
+.muñeco{
+    padding: 0 8.5% 8.5% 8.5%;
+}
+
+.alertas-resultado{
+    display: flex;
+    flex-direction: column;
+    padding: 0 8.5% 0 8.5%;
+}
+
+.alerta{
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding-bottom: 5.2%;
+}
+
+.indicacion {
+    font-size: 1rem;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.area-texto-encriptado {
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    text-align: start;
+    box-sizing: border-box;
+    overflow: auto;
+    word-break: break-all;
+    height: 100%;
+    width: 100%;
+    padding: 8% 8% 8% 8%;
+    line-height: 150%;
+}
+
+.texto-encriptado {
+    color: var(--color-fuentes)
+}
+
+.copiar {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    word-break: break-all;
+    padding: 0 8% 8% 8%;
+    
+}
+
+.btn-copiar{
+    border: var(--color-fuentes) solid 2px;
+    background-color: var(--color-secundario);
+    border-radius: 24px;
+    padding: 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+
+    main {
+        flex-direction: column;
+    }
+
+    .seccion-inicial {
+        width: 90%;
+    }
+
+    .seccion-resultado {
+        padding: 5% 5% 5% 5%;
+        width: 80%;
+        height: auto;
+    }
+
+    .muñeco {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .botones {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .btn-desencriptar,
+    .btn-encriptar {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 415px) {
+
+    .imagen-sugerencia {
+        height: 1rem;
+    }
+
+    .sugerencia {
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 290px) {
+    .seccion-resultado {
+        word-break: break-all;
+    }
+
+    
+}
